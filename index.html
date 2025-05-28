@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelos Enterprises- Education provider</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/config.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+
+</head>
+
+<body>
+    <gelos-header current-page="home"></gelos-header>
+
+    <div id="gallery">
+        <button id="previous" onclick="pre()"><</button>
+        <img id="currentImg" src="images/pexels-cowomen-2041624-2.jpg" alt="1">
+        <button id="next" onclick="next()">></button>
+    </div>
+
+    <ul id="galleryBtn">
+        <li><a href="images/pexels-thirdman-8926410-1.jpg" class="slides"><button></button></a></li>
+        <li><a href="images/pexels-cowomen-2041624-2.jpg" class="slides"><button></button></a></li>
+        <li><a href="images/pexels-thirdman-6502731-3.jpg" class="slides"><button></button></a></li>
+        <li><a href="images/pexels-charlotte-may-5965576.jpg" class="slides"><button></button></a></li>
+    </ul>
+
+    <script src="js/gallery.js"></script>
+    
+    <gelos-footer></gelos-footer>
+</body>
+</html>

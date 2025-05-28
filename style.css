@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, arial, sans-serif;
+    color: rgb(87, 84, 84);
+    line-height: 1.6;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+#headerTop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#headerTop ul {
+    list-style-type: none;
+}
+
+#headerTop input {
+    vertical-align: super;
+    padding: 4px 1px;
+}
+
+#headerTop a img {
+    max-width: 100px;
+    width: 100%;
+}
+
+/* nav  */
+#responsive-menu .menu,
+.faq-item {
+    /* responsive MENU */
+    max-height: 0;
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    height: 100%;
+    transition: max-height 0.2s;
+}
+
+#responsive-menu .menu.menu-open,
+.faq-item.faq-item-open {
+    /* responsive MENU */
+    max-height: 1000px;
+    transition: max-height 0.2s;
+}
+
+#responsive-menu .menu-icon {
+    /* responsive MENU */
+    display: inline-block;
+    margin-top: 4px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+nav li {
+    border-bottom: 1px solid black;
+    padding: 5px 3px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(87, 84, 84);
+}
+
+nav a:hover {
+    color: rgb(39, 110, 130)
+}
+
+/* background design */
+#bg h1 {
+    margin: 10px 0;
+    padding: 3vh 0;
+    text-align: center;
+    font-size: 48px;
+    color: rgb(39, 110, 130);
+}
+
+h1 {
+    font-size: large;
+    margin: 5px 0;
+}
+
+p {
+    display: flex;
+    padding: 10px;
+    letter-spacing: 0.1em;
+    line-height: 1.3rem;
+}
+
+#contact p,
+#contact h3,
+#contact strong {
+    font-size: medium;
+    padding: 3px 15px;
+    line-height: 1.2em;
+    border-collapse: collapse;
+}
+
+h2 {
+    margin: 4px 0;
+    color: rgb(39, 110, 130);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    flex: 1;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    margin: 1vh auto 0;
+    padding: none;
+    background-color: rgba(148, 178, 191, 0.7);
+    border-radius: 10px;
+    justify-content: center;
+    width: 88%;
+}
+
+#gallery img {
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+#gallery button {
+    background-color: rgba(148, 178, 191, 0);
+    border: none;
+    width: 44px;
+    font-size: xx-large;
+    color: rgba(148, 178, 191);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#galleryBtn {
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#galleryBtn button {
+    width: 10px;
+    height: 5px;
+    background-color: rgba(148, 178, 191);
+    border: none;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+#contact,
+#policies {
+    margin: 5px;
+}
+
+footer {
+    background-color: rgba(148, 178, 191);
+    color: white;
+    text-align: center;
+    padding: 1.2em;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 320px;
+    margin: auto;
+}
+
+footer li {
+    list-style: none;
+    align-self: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: bold;
+    border: 1px solid rgb(39, 110, 130);
+    width: 100%;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+form h3 {
+    color: rgb(39, 110, 130);
+    margin: 7px auto;
+    box-sizing: border-box;
+}
+
+label {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 3px;
+    font-size: 14px;
+}
+
+form input, form select, form textarea {
+    min-height: 44px;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid rgb(39, 110, 130);
+    border-radius: 4px;
+}
+
+form span {
+    color: red;
+    font-size: small;
+    font-weight: lighter;
+    padding-left: 8px;
+}
+
+input[type="submit"] {
+    width: 150px;
+    box-shadow: none;
+    font-weight: bold;
+    background-color: rgba(148, 178, 191, 1)
+}
+
+select {
+    font-weight: 550;
+    font-size: 14px;
+    padding: 0%;
+    margin: 5px 0;
+    color: rgb(87, 84, 84);
+}
+
+@media only screen and (max-width: 478px) {
+    /* Removing all header-related mobile styles */
+    form label {
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+    
+    main {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media only screen and (min-width: 479px) {
+    #responsive-menu .menu-icon {
+        /* responsive MENU */
+        display: none;
+        width: 100%;
+    }
+
+    #responsive-menu .menu-icon a {
+        /* responsive MENU */
+        width: 100%;
+        display: inline-block;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #responsive-menu .menu-icon img {
+        /* responsive MENU */
+        vertical-align: bottom;
+    }
+
+    #responsive-menu .menu {
+        /* responsive MENU */
+        max-height: 1000px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+    }
+
+    nav li {
+        padding: 5px 3px;
+        list-style: none;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #responsive-menu .menu-icon {
+        display: none;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        border-bottom: 1px solid black;
+    }
+    
+    nav li {
+        border: none;
+    }
+    
+    form {
+        max-width: 40%;
+        min-width: 350px;
+    }
+    
+    #gallery {
+        width: 70%;
+    }
+}

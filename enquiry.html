@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelos Enterprises- Education provider</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/config.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+</head>
+
+<body>
+    <gelos-header current-page="enquiry"></gelos-header>
+
+    <div id="enquiry">
+        <form id="form" novalidate onsubmit="return validate()">
+            <h3>Enquiry Form</h3>
+            <label for="fname">Given name: </label><input type="text" id="fname" required>
+            <span id="err1"></span>
+
+            <label for="lname">Family name: </label><input type="text" id="lname" required>
+            <span id="err2"></span>
+            <label for="mobile">Mobile: </label> <input type="number" max="11" id="mobile" required>
+            <span id="err3"></span>
+            <label for="email">Email: </label><input type="email" id="email" required>
+            <span id="err4"></span>
+            <label for="enqruiry">Enquiry Type</label>
+            <select name="enquiry" id="enquiry">
+                <option value="">Choose type of enquiry:</option>
+                <option value="general enquiry">General Enquiry</option>
+                <option value="Enrol enquiry">Enrol Enquiry</option>
+                <option value="Qualification request">Qualification Enquiry</option>
+            </select>
+            <span id="err5"></span>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10">Message...</textarea>
+            <input type="submit" id="btn" value="submit">
+        </form>
+    </div>
+
+    <gelos-footer></gelos-footer>
+</body>
+
+</html>
