@@ -24,7 +24,7 @@ Recent improvements after course completion:
 *Homepage on desktop showing the gallery and navigation*
 
 ### Mobile View
-<div style="display: flex; justify-content: space-between; gap: 10px;">
+<div style="display: flex; flex-direction:row; justify-content: space-between; gap: 10px;">
     <div style="flex: 1; text-align: center; width: 375px;">
         <img src="images/screenshots/mobile-closed.png" alt="Mobile Closed Menu" style="width: 375px; height: auto;">
         <em>Mobile view with hamburger menu</em>
