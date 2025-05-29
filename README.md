@@ -24,16 +24,11 @@ Recent improvements after course completion:
 *Homepage on desktop showing the gallery and navigation*
 
 ### Mobile View
-<div style="display: flex; flex-direction:row; justify-content: space-between; gap: 10px;">
-    <div style="flex: 1; text-align: center; width: 375px;">
-        <img src="images/screenshots/mobile-closed.png" alt="Mobile Closed Menu" style="width: 375px; height: auto;">
-        <em>Mobile view with hamburger menu</em>
-    </div>
-    <div style="flex: 1; text-align: center; width: 375px;">
-        <img src="images/screenshots/mobile-open.png" alt="Mobile Open Menu" style="width: 375px; height: auto;">
-        <em>Mobile view with expanded navigation menu</em>
-    </div>
-</div>
+![Mobile Closed Menu](images/screenshots/mobile-closed.png)<br/>
+*Mobile view with hamburger menu*
+
+!["Mobile Open Menu](images/screenshots/mobile-open.png)<br/>
+*Mobile view with expanded navigation menu*
 
 ### Form Validation
 ![Form Validation](images/screenshots/form.png)
